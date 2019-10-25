@@ -1,0 +1,19 @@
+ 
+1
+0      0 
+autumnjazz/CPlusPlusViewer
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Security
+Insights
+CPlusPlusViewer/src/MainClass.java
+Newer 
+Older
+100644 21 lines (15 sloc) 445 Bytes
+import project.GUI.*;
+import javax.swing.JFrame; 
+public class MainClass {  	public static void main(String[] args) {   	JFrame f = new JFrame("C++Viewer");  	MainFrame m = new MainFrame();  	FileClass file = new FileClass(m);   	f.setJMenuBar(file.getJMenuBar());  	f.getContentPane().add(m.getContentPane());   	f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  	f.setSize(1280, 800);  	f.setVisible(true);  	f.setResizable(false);  	}
+}
